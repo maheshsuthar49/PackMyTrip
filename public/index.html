@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PackMyTrip</title>
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <a href="index.html" class="logo">Pack<span>My</span>Trip</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="package.html">Package</a>
+            <a href="book.html">Book</a>
+        </nav>
+       
+        <div class="icons">
+            <div class="history-icon" id="loginLink"><a href="login.html" title="Login"><i class='bx bxs-user'></i></a></div>
+            <div class="history-icon" id="historyLink" style="display: none;"><a href="history.html" title="Booking History"><i class='bx bx-history'></i></a></div>
+            <div class="history-icon" id="logoutLink" style="display: none;"><a href="#" id="logoutBtn" title="Logout"><i class='bx bx-log-out'></i></a></div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!-- Header Section end -->
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <video autoplay muted loop class="background-video">
+                        <source src="images/video3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="content">
+                        <span>Explore, Discover, Travel</span>
+                        <h3>Travel arround the world</h3>
+                        <a href="package.html" class="btn">Discover more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <video autoplay muted loop class="background-video">
+                        <source src="images/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="content">
+                        <span>Explore, Discover, Travel</span>
+                        <h3>Discover the new places</h3>
+                        <a href="package.html" class="btn">Discover more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <video autoplay muted loop class="background-video">
+                        <source src="images/video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="content">
+                        <span>Explore, Discover, Travel</span>
+                        <h3>Make your tour worthwhile</h3>
+                        <a href="package.html" class="btn">Discover more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- Home end -->
+
+    <!-- home package secrion starts -->
+    <section class="home-packages">
+        <h1 class="heading-title">Our Packages</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/pakage1.jpg" alt="" srcset="" loading="lazy">
+                </div>
+                <div class="content">
+                    <h3>Rajasthan Tour</h3>
+                    <p>Discover Rajasthan’s royal forts, vibrant culture, and golden deserts on this unforgettable journey.</p>
+                    <a href="book.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/pakage2.webp" alt="" srcset="" loading="lazy">
+                </div>
+                <div class="content">
+                    <h3>Manali Tour</h3>
+                    <p>Experience breathtaking mountains and adventure in Kullu Manali.</p>
+                    <a href="book.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/pakage3.webp" alt="" srcset="" loading="lazy">
+                </div>
+                <div class="content">
+                    <h3>Kashmir Tour</h3>
+                    <p>Explore the serene beauty of Kashmir with its lakes, valleys, and snow-clad mountains.</p>
+                    <a href="book.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/pakage4.webp" alt="" srcset="" loading="lazy">
+                </div>
+                <div class="content">
+                    <h3>Kerala Tour</h3>
+                    <p>Experience Kerala’s backwaters, lush greenery, and serene beaches</p>
+                    <a href="book.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="load-more"><a href="package.html" class="btn">Load More</a></div>
+    </section>
+    <!-- home package secrion end-->
+
+    <!-- Home offer section -->
+    <section class="home-offer">
+        <div class="content">
+            <h3>Upto 50% off</h3>
+         <p>Get exciting discounts on tour packages. Book now and save big on your next adventure!</p>
+            <a href="book.html" class="btn">Book Now</a>
+        </div>
+    </section>
+    <!-- Home offer section end-->
+
+    <!-- Services Section -->
+    <section class="services">
+        <h1 class="heading-title">Our Services</h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/Adventure-pana.png" alt="" srcset="" loading="lazy">
+                <h3>Adventure</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/Tour guide-pana.png" alt="" srcset="" loading="lazy">
+                <h3>Tour Guide</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/Hiking-bro.png" alt="" srcset=""loading="lazy">
+                <h3>Trekking</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/Campfire-rafiki.png" alt="" srcset=""loading="lazy">
+                <h3>Camp Fire</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/Off road-pana.png" alt="" srcset="" loading="lazy">
+                <h3>Off Road</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/Camping-bro.png" alt="" srcset="" loading="lazy">
+                <h3>Camping</h3>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section end -->
+
+    <!-- Home about section -->
+    <section class="home-about">
+        <div class="image">
+            <img src="images/about-us.jpg" alt="" srcset="" loading="lazy">
+        </div>
+
+        <div class="content">
+            <h3>About Us</h3>
+            <p>Welcome to PackMyTrip, your trusted travel partner for exploring the incredible destinations of India.
+                We specialize in providing hassle-free and memorable tour experiences, catering to families, solo
+                travelers,
+                and corporate teams. Our mission is to make travel planning effortless, offering handpicked travel
+                packages
+                with seamless booking options. Let us take care of the details while you enjoy the journey.</p>
+            <a href="about.html" class="btn">Read More</a>
+        </div>
+
+            <!-- Floating Chatbot Icon -->
+    <div id="chatbot-icon" onclick="toggleChatbot()">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Chatbot Popup -->
+    <div id="chatbot-popup">
+        <div id="chat-header">
+            <span>PackMyTrip Chatbot</span>
+            <button onclick="toggleChatbot()">✖</button>
+        </div>
+        <div id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    </section>
+    <!-- Home about section End-->
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html"><i class="fas fa-angle-right"></i> Home</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i> About</a>
+                <a href="package.html"><i class="fas fa-angle-right"></i> Package</a>
+                <a href="book.html"><i class="fas fa-angle-right"></i> Book</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="admindashboard.html"><i class="fas fa-angle-right"></i> Admin</a>
+                <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a>
+                <a href="term.html"><i class="fas fa-angle-right"></i> Term & Condition</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fas fa-phone"></i> +91 9976543210</a>
+                <a href="#"><i class="fas fa-phone"></i> +91 9976543311</a>
+                <a href="#"><i class="fas fa-envelope"></i> packmytrip@gmail.com</a>
+                <a href="#"><i class="fas fa-location"></i> Pali Raj. 306401</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; PackMyTrip All Right Reserved.</p>
+        </div>
+
+    </section>
+    <!-- Footer end -->
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    <!-- chatbot -->
+    <script>
+        const BASE_URL = "https://pack-mytrip.vercel.app";
+        function toggleChatbot() {
+            const chatbot = document.getElementById("chatbot-popup");
+            chatbot.classList.toggle("open");
+        }
+
+        async function sendMessage() {
+            const chatInput = document.getElementById("chat-input");
+            const chatMessages = document.getElementById("chat-messages");
+            const userMessage = chatInput.value.trim();
+            if (!userMessage) return;
+
+            chatInput.value = ""; // Clear input instantly
+            chatMessages.innerHTML += `
+                <div class="message user-message">
+                    <strong>You:</strong> <p>${userMessage}</p>
+                </div>
+            `;
+
+            // Show "Typing..." while fetching response
+            const botTyping = document.createElement("div");
+            botTyping.classList.add("message", "bot-message");
+            botTyping.innerHTML = `<strong>Bot:</strong> <p>Typing...</p>`;
+            chatMessages.appendChild(botTyping);
+
+            try {
+                const response = await fetch(`${BASE_URL}/chat`, { 
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ message: userMessage })
+});
+
+                const data = await response.json();
+                botTyping.innerHTML = `<strong>Bot:</strong> <p>${data.reply}</p>`;
+
+            } catch (error) {
+                botTyping.innerHTML = `<strong>Bot:</strong> <p>Sorry, something went wrong!</p>`;
+            }
+
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        document.getElementById("chat-input").addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                sendMessage();
+            }
+        });
+    </script>
+    <!-- chatbot end -->
+
+    <!-- login logout -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const logoutBtn = document.getElementById('logoutBtn');
+            const historyLink = document.getElementById('historyLink');
+            const loginLink = document.getElementById('loginLink');
+            const logoutLink = document.getElementById('logoutLink');
+
+            logoutBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                localStorage.removeItem('isLoggedIn');
+                localStorage.removeItem('userId');
+                localStorage.removeItem('userEmail');
+                window.location.href = 'index.html';
+            });
+
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (isLoggedIn === 'true') {
+                historyLink.style.display = 'block';
+                logoutLink.style.display = 'block';
+                loginLink.style.display = 'none';
+            } else {
+                historyLink.style.display = 'none';
+                logoutLink.style.display = 'none';
+                loginLink.style.display = 'block';
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chardham - PackMyTrip</title>
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* @media (max-width: 768px) {
+      .day {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .day-number {
+        margin-bottom: 10px;
+      }
+    } */
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <a href="../index.html" class="logo">Pack<span>My</span>Trip</a>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../package.html">Package</a>
+            <a href="../book.html">Book</a>
+        </nav>
+        <div class="icons">
+            <div class="history-icon" id="loginLink"><a href="../login.html" title="Login"><i class='bx bxs-user'></i></a></div>
+            <div class="history-icon" id="historyLink" style="display: none;"><a href="../history.html" title="Booking History"><i class='bx bx-history'></i></a></div>
+            <div class="history-icon" id="logoutLink" style="display: none;"><a href="#" id="logoutBtn" title="Logout"><i class='bx bx-log-out'></i></a></div>
+          </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!-- Header Section end -->
+
+    <div class="heading" style="background: url('../images/Chardham\ Tour.jpg')">
+        <p>It's time for Exploring</p>
+        <h1>Chardham Yatra</h1>
+    </div>
+    <!-- About Section -->
+    <section class="about">
+        <div class="image">
+            <img src="../images/Chardham Tour1.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content">
+            <h3>Chardham Yatra</h3>
+            <p>The Char Dham Yatra in Uttarakhand—Badrinath, Kedarnath, Gangotri, and Yamunotri—is a revered Hindu pilgrimage, believed to cleanse the soul and lead to salvation (moksha). Situated in the Garhwal Himalayas, these shrines attract devotees from across India and beyond. Badrinath is dedicated to Lord Vishnu, Kedarnath to Lord Shiva, Gangotri to Goddess Ganga, and Yamunotri to Goddess Yamuna. These sacred sites hold immense significance in Hindu mythology. Additionally, another Char Dham, established by Adi Shankaracharya, consists of Badrinath (Uttarakhand), Dwarka (Gujarat), Puri (Odisha), and Rameswaram (Tamil Nadu), forming four major spiritual destinations across India.
+      </p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>11 NIGHTS 12 DAYS</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-car"></i>
+                    <span>ROAD TRIP</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Start & End: Haridwar</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-hotel"></i>
+                    <span class="icon-star" style="display: flex; gap: 3px; height: 21px;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-tag"></i>
+                    <span>Price: ₹32,999</span>
+                </div>
+                <div class="content">
+                    <a href="../book.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="itinerary">
+            <h2>Itinerary</h2>
+
+            <div class="day-container">
+                <!-- Dotted line spanning all days -->
+                <div class="dotted-line"></div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>1</span></div>
+                    <div class="description">
+                        <h3>Arrival in Haridwar - Rishikesh</h3>
+                        <p>Your journey begins in Haridwar, one of India's holiest cities. Visit Har Ki Pauri to witness the mesmerizing Ganga Aarti in the evening. Later, proceed to Rishikesh and explore Ram Jhula, Laxman Jhula, and Triveni Ghat before an overnight stay.</p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>2</span></div>
+                    <div class="description">
+                        <h3>Rishikesh - Barkot</h3>
+                        <p>After breakfast, leave for Barkot, passing through the scenic town of Mussoorie. Stop at Kempty Falls to enjoy the breathtaking views. Continue your journey through lush valleys and check into your hotel in Barkot for an overnight stay.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>3</span></div>
+                    <div class="description">
+                        <h3> Barkot - Yamunotri - Barkot</h3>
+                        <p>Early morning, drive to Janki Chatti and trek 6 km to Yamunotri Temple. Take a dip in Surya Kund before offering prayers to Goddess Yamuna. After darshan, trek back to Janki Chatti and return to Barkot.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>4</span></div>
+                    <div class="description">
+                        <h3>Barkot - Uttarkashi</h3>
+                        <p>After breakfast, drive to Uttarkashi, a town on the banks of the Bhagirathi River. Visit the famous Kashi Vishwanath Temple, dedicated to Lord Shiva. Spend the evening at leisure before an overnight stay.</p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>5</span></div>
+                    <div class="description">
+                        <h3>Uttarkashi - Gangotri - Uttarkashi</h3>
+                        <p>Drive through scenic valleys to Gangotri. Stop at Gangnani for a dip in the Rishikund hot spring. At Gangotri Temple, seek blessings from Goddess Ganga and visit Surya Kund before returning to Uttarkashi for the night.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>6</span></div>
+                    <div class="description">
+                        <h3>Uttarkashi - Guptkashi</h3>
+                        <p>Leave early for Guptkashi, passing through mesmerizing landscapes and the Mandakini River. Upon arrival, visit the Vishwanath Temple and check into your hotel for an overnight stay.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>7</span></div>
+                    <div class="description">
+                        <h3>Guptkashi - Kedarnath</h3>
+                        <p>Drive to Gaurikund, the base for the 18 km trek to Kedarnath. Trek or opt for pony/doli/helicopter services. Upon arrival, visit Kedarnath Temple and offer prayers to Lord Shiva. Stay overnight in Kedarnath.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>8</span></div>
+                    <div class="description">
+                        <h3>Kedarnath - Guptkashi</h3>
+                        <p>Attend the morning Aarti at Kedarnath Temple. Trek back to Gaurikund and drive to Guptkashi for a well-deserved rest.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>9</span></div>
+                    <div class="description">
+                        <h3>Guptkashi - Badrinath</h3>
+                        <p>Proceed towards Badrinath, stopping at Joshimath. Upon arrival, take a dip in Tapt Kund before visiting Badrinath Temple. Explore Mana Village, Vyas Gufa, and Vasudhara Falls before an overnight stay.
+                        </p>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>10</span></div>
+                    <div class="description">
+                        <h3>Badrinath - Rudraprayag</h3>
+                        <p>Attend the morning Aarti at Badrinath and visit Brahma Kapal for ancestor rituals. Drive towards Rudraprayag, where the Alaknanda and Mandakini Rivers merge. Stay overnight in Rudraprayag.
+                        </p>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>11</span></div>
+                    <div class="description">
+                        <h3>Rudraprayag - Haridwar</h3>
+                        <p>Drive back to Haridwar, stopping at Devprayag, where the Bhagirathi and Alaknanda Rivers form the Ganga. Attend the Ganga Aarti at Har Ki Pauri before resting for the night.
+                        </p>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>12</span></div>
+                    <div class="description">
+                        <h3>Departure from Haridwar</h3>
+                        <p>After breakfast, check out and proceed to Delhi or your onward destination, marking the end of your spiritually fulfilling Char Dham Yatra.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="budget-includes">
+                <h2>Budget Includes:</h2>
+                <ul>
+                    <li>Accommodation in hotels/lodges/tents.</li>
+                    <li>Daily breakfast and dinner.</li>
+                    <li>Transport by AC vehicle.</li>
+                    <li>Temple darshan assistance.</li>
+                    <li> Helicopter/Pony/Palki booking assistance.</li>
+                </ul>
+            </div>
+
+            <div class="exclusions">
+                <h2>Exclusions:</h2>
+                <ul>
+                    <li>Helicopter, palki, or pony charges for Kedarnath/Yamunotri.</li>
+                    <li> Personal expenses & donations at temples.</li>
+                    <li>Any extra sightseeing or additional meals.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="home-offer">
+        <div class="content">
+            <h3>Upto 50% off</h3>
+         <p>Get exciting discounts on tour packages. Book now and save big on your next adventure!</p>
+            <a href="book.html" class="btn">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="../index.html"><i class="fas fa-angle-right"></i> Home</a>
+                <a href="../about.html"><i class="fas fa-angle-right"></i> About</a>
+                <a href="../package.html"><i class="fas fa-angle-right"></i> Package</a>
+                <a href="../book.html"><i class="fas fa-angle-right"></i> Book</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+                <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a>
+                <a href="../term.html"><i class="fas fa-angle-right"></i> Term & Condition</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href=""><i class="fas fa-phone"></i> +91 9976543210</a>
+                <a href=""><i class="fas fa-phone"></i> +91 9976543311</a>
+                <a href=""><i class="fas fa-envelope"></i> packmytrip@gmail.com</a>
+                <a href=""><i class="fas fa-location"></i> Pali Rajasthan 306401</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; PackMyTrip All Right Reserved.</p>
+        </div>
+
+    </section>
+    <!-- Footer end -->
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const logoutBtn = document.getElementById('logoutBtn');
+            const historyLink = document.getElementById('historyLink');
+            const loginLink = document.getElementById('loginLink');
+            const logoutLink = document.getElementById('logoutLink');
+
+            logoutBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                localStorage.removeItem('isLoggedIn');
+                localStorage.removeItem('userId');
+                localStorage.removeItem('userEmail');
+                window.location.href = '../index.html';
+            });
+
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (isLoggedIn === 'true') {
+                historyLink.style.display = 'block';
+                logoutLink.style.display = 'block';
+                loginLink.style.display = 'none';
+            } else {
+                historyLink.style.display = 'none';
+                logoutLink.style.display = 'none';
+                loginLink.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>

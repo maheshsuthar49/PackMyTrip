@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajasthan - PackMyTrip</title>
+  <!-- swiper css link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- custom css file -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- boxicon -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    /* @media (max-width: 768px) {
+      .day {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .day-number {
+        margin-bottom: 10px;
+      }
+    } */
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <section class="header">
+    <a href="../index.html" class="logo">Pack<span>My</span>Trip</a>
+
+    <nav class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../package.html">Package</a>
+      <a href="../book.html">Book</a>
+    </nav>
+    <div class="icons">
+      <div class="history-icon" id="loginLink"><a href="../login.html" title="Login"><i class='bx bxs-user'></i></a>
+      </div>
+      <div class="history-icon" id="historyLink" style="display: none;"><a href="../history.html"
+          title="Booking History"><i class='bx bx-history'></i></a></div>
+      <div class="history-icon" id="logoutLink" style="display: none;"><a href="#" id="logoutBtn" title="Logout"><i
+            class='bx bx-log-out'></i></a></div>
+    </div>
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
+  <!-- Header Section end -->
+
+  <div class="heading" style="background: url('../images/slide-1.jpg')">
+    <p>It's time for Exploring</p>
+    <h1>Rajasthan</h1>
+  </div>
+  <!-- About Section -->
+  <section class="about">
+    <div class="image">
+      <img src="../images/Rajasthan Tour1.jpg" alt="" srcset="">
+    </div>
+
+    <div class="content">
+      <h3>RajasthanTour</h3>
+      <p>Experience the grandeur of Rajasthan, the land of kings, with this 10 Nights / 11 Days tour. Discover majestic
+        forts, royal palaces, golden deserts, serene lakes, and rich cultural heritage. From Jaipur’s vibrant bazaars to
+        Jaisalmer’s sand dunes and Udaipur’s romantic lakes, this journey offers a perfect mix of history, adventure,
+        and relaxation.
+      </p>
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-calendar-alt"></i>
+          <span>10 NIGHTS 11 DAYS</span>
+        </div>
+        <div class="icons">
+          <i class="fas fa-car"></i>
+          <span>ROAD TRIP</span>
+        </div>
+        <div class="icons">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Start & End: Jaipur</span>
+        </div>
+        <div class="icons">
+          <i class="fas fa-hotel"></i>
+          <span class="icon-star" style="display: flex; gap: 3px; height: 21px;">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
+        </div>
+        <div class="icons">
+          <i class="fas fa-tag"></i>
+          <span>Price: ₹32,999</span>
+        </div>
+        <div class="content">
+          <a href="../book.html" class="btn">Book Now</a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="itinerary">
+      <h2>Itinerary</h2>
+
+      <div class="day-container">
+        <!-- Dotted line spanning all days -->
+        <div class="dotted-line"></div>
+
+        <div class="day">
+          <div class="day-circle"><span>Day</span><span>1</span></div>
+          <div class="description">
+            <h3>Arrival in Jaipur – Explore the Pink City</h3>
+            <p>Arrive at Jaipur Airport/Railway Station, where our representative will greet you. Transfer to your hotel
+              and relax. In the evening, visit Birla Temple and Nahargarh Fort for a stunning sunset view. Stroll
+              through Johri Bazaar before an overnight stay in Jaipur.
+            </p>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="day-circle"><span>Day</span><span>2</span></div>
+          <div class="description">
+            <h3>Jaipur Sightseeing – Forts & Palaces</h3>
+            <p>After breakfast, visit Amber Fort, where you can enjoy an elephant ride. Explore Jaigarh Fort and
+              Nahargarh Fort before visiting Hawa Mahal, Jantar Mantar, and City Palace. In the evening, experience
+              Rajasthani culture at Chokhi Dhani with traditional dance and cuisine. Overnight stay in Jaipur.
+            </p>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="day-circle"><span>Day</span><span>3</span></div>
+          <div class="description">
+            <h3>Jaipur to Bikaner – The Desert Town</h3>
+            <p>Drive to Bikaner after breakfast. Visit Junagarh Fort, Lalgarh Palace, and the famous Karni Mata Temple
+              (Rat Temple). Enjoy a traditional Rajasthani dinner. Overnight stay in Bikaner.
+            </p>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="day-circle"><span>Day</span><span>4</span></div>
+          <div class="description">
+            <h3>Bikaner to Jaisalmer – The Golden City</h3>
+            <p>After breakfast, head towards Jaisalmer. Visit Gadisar Lake and enjoy an evening exploring local markets
+              for handicrafts and Rajasthani jewelry. Overnight stay in Jaisalmer.
+            </p>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="day-circle"><span>Day</span><span>5</span></div>
+          <div class="description">
+            <h3>Jaisalmer Sightseeing & Desert Safari</h3>
+            <p>Explore Jaisalmer Fort, Patwon Ki Haveli, and Salim Singh Ki Haveli. In the afternoon, proceed to Sam
+              Sand Dunes for a thrilling desert safari, camel ride, and cultural night with folk dance and music. Stay
+              overnight in a desert camp.
+            </p>
+          </div>
+        </div>
+        <div class="day">
+          <div class="day-circle"><span>Day</span><span>6</span></div>
+          <div class="description">
+            <h3>Jaisalmer to Jodhpur – The Blue City</h3>
+            <p>After breakfast, drive to Jodhpur. Visit the majestic Mehrangarh Fort, Jaswant Thada, and the royal Umaid
+              Bhawan Palace. Explore the bustling Clock Tower Market in the evening. Overnight stay in Jodhpur.
+            </p>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="day-circle"><span>Day</span><span>7</span></div>
+          <div class="description">
+            <h3> Jodhpur to Mount Abu – Rajasthan’s Only Hill Station</h3>
+            <p>After breakfast, drive to Mount Abu. Visit Nakki Lake, Guru Shikhar, and Dilwara Jain Temples. Enjoy a peaceful sunset at Sunset Point. Overnight stay in Mount Abu.
+            </p>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="day-circle"><span>Day</span><span>8</span></div>
+          <div class="description">
+            <h3>Mount Abu to Udaipur – The City of Lakes</h3>
+            <p>After breakfast, head to Udaipur. Enjoy a boat ride on Lake Pichola, visiting Jag Mandir and the Lake Palace. Overnight stay in Udaipur.
+            </p>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="day-circle"><span>Day</span><span>9</span></div>
+          <div class="description">
+            <h3>Udaipur Sightseeing – Heritage & Royalty</h3>
+            <p>Explore City Palace, Jagdish Temple, Saheliyon Ki Bari, and Fateh Sagar Lake. Visit Bagore Ki Haveli for a cultural dance show in the evening. Overnight stay in Udaipur.
+            </p>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="day-circle"><span>Day</span><span>10</span></div>
+          <div class="description">
+            <h3>Udaipur to Pushkar – A Spiritual Retreat</h3>
+            <p>Drive to Pushkar, a holy town famous for Pushkar Lake and Brahma Temple. Explore the vibrant local market before relaxing in a peaceful desert setting. Overnight stay in Pushkar.
+            </p>
+          </div>
+        </div>
+        <div class="day">
+          <div class="day-circle"><span>Day</span><span>11</span></div>
+          <div class="description">
+            <h3>Departure from Jaipur</h3>
+            <p>After breakfast, return to Jaipur for your onward journey, concluding your Rajasthan adventure.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div class="budget-includes">
+        <h2>Budget Includes:</h2>
+        <ul>
+          <li>Accommodation (10 Nights) in 3-star hotels.</li>
+          <li>Daily breakfast and dinner.</li>
+          <li>Private AC vehicle for sightseeing & transfers.</li>
+          <li>Desert safari & cultural night in Jaisalmer.</li>
+          <li> Boat ride in Udaipur.</li>
+          <li>Driver allowance, parking, & toll taxes.</li>
+
+        </ul>
+      </div>
+
+      <div class="exclusions">
+        <h2>Exclusions:</h2>
+        <ul>
+          <li>Airfare / Train tickets.</li>
+          <li> Entry fees at monuments & activities.</li>
+          <li> Personal expenses (shopping, extra meals, etc.).</li>
+          <li>Adventure sports & Jeep safari charges.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="home-offer">
+    <div class="content">
+      <h3>Upto 50% off</h3>
+      <p>Get exciting discounts on tour packages. Book now and save big on your next adventure!</p>
+      <a href="book.html" class="btn">Book Now</a>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Footer -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="../index.html"><i class="fas fa-angle-right"></i> Home</a>
+        <a href="../about.html"><i class="fas fa-angle-right"></i> About</a>
+        <a href="../package.html"><i class="fas fa-angle-right"></i> Package</a>
+        <a href="../book.html"><i class="fas fa-angle-right"></i> Book</a>
+      </div>
+
+      <div class="box">
+        <h3>Extra Links</h3>
+        <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+        <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
+        <a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a>
+        <a href="../term.html"><i class="fas fa-angle-right"></i> Term & Condition</a>
+
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href=""><i class="fas fa-phone"></i> +91 9976543210</a>
+        <a href=""><i class="fas fa-phone"></i> +91 9976543311</a>
+        <a href=""><i class="fas fa-envelope"></i> packmytrip@gmail.com</a>
+        <a href=""><i class="fas fa-location"></i> Pali Rajasthan 306401</a>
+      </div>
+
+      <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&#169; PackMyTrip All Right Reserved.</p>
+    </div>
+
+  </section>
+  <!-- Footer end -->
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- custom js -->
+  <script src="../js/script.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const logoutBtn = document.getElementById('logoutBtn');
+      const historyLink = document.getElementById('historyLink');
+      const loginLink = document.getElementById('loginLink');
+      const logoutLink = document.getElementById('logoutLink');
+
+      logoutBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('userId');
+        localStorage.removeItem('userEmail');
+        window.location.href = '../index.html';
+      });
+
+      const isLoggedIn = localStorage.getItem('isLoggedIn');
+      if (isLoggedIn === 'true') {
+        historyLink.style.display = 'block';
+        logoutLink.style.display = 'block';
+        loginLink.style.display = 'none';
+      } else {
+        historyLink.style.display = 'none';
+        logoutLink.style.display = 'none';
+        loginLink.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+
+</html>

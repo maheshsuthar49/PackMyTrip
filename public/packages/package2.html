@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullu Manali - PackMyTrip</title>
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* @media (max-width: 768px) {
+      .day {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .day-number {
+        margin-bottom: 10px;
+      }
+    } */
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <a href="../index.html" class="logo">Pack<span>My</span>Trip</a>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../package.html">Package</a>
+            <a href="../book.html">Book</a>
+        </nav>
+        <div class="icons">
+            <div class="history-icon" id="loginLink"><a href="../login.html" title="Login"><i class='bx bxs-user'></i></a></div>
+            <div class="history-icon" id="historyLink" style="display: none;"><a href="../history.html" title="Booking History"><i class='bx bx-history'></i></a></div>
+            <div class="history-icon" id="logoutLink" style="display: none;"><a href="#" id="logoutBtn" title="Logout"><i class='bx bx-log-out'></i></a></div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!-- Header Section end -->
+
+    <div class="heading" style="background: url('../images/Manali\ Tour.jpg')">
+        <p>It's time for Exploring</p>
+        <h1>Kullu Manali</h1>
+    </div>
+    <!-- About Section -->
+    <section class="about">
+        <div class="image">
+            <img src="../images/Manali Tour1.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content">
+            <h3>Kullu Manali Tour</h3>
+            <p>Experience the breathtaking beauty of Kullu and Manali, nestled in the heart of the Himalayas. This 5
+                Nights / 6 Days tour offers a perfect blend of adventure, nature, and relaxation. Explore scenic
+                valleys, snow-capped mountains, thrilling adventure sports, and ancient temples, making it an
+                unforgettable trip.
+            </p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>5 NIGHTS 6 DAYS</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-car"></i>
+                    <span>ROAD TRIP</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Start & End: Manali</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-hotel"></i>
+                    <span class="icon-star" style="display: flex; gap: 3px; height: 21px;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-tag"></i>
+                    <span>Price: ₹18,999</span>
+                </div>
+                <div class="content">
+                    <a href="../book.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="itinerary">
+            <h2>Itinerary</h2>
+
+            <div class="day-container">
+                <!-- Dotted line spanning all days -->
+                <div class="dotted-line"></div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>1</span></div>
+                    <div class="description">
+                        <h3>Arrival in Manali – Relax & Explore</h3>
+                        <p>Arrive in Manali via bus or private transport, where our representative will greet you. Check
+                            in to your hotel and relax. In the evening, explore Mall Road, shop for local handicrafts,
+                            and enjoy café hopping. Overnight stay in Manali.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>2</span></div>
+                    <div class="description">
+                        <h3>Solang Valley – Adventure & Snow Activities</h3>
+                        <p>After breakfast, head to Solang Valley, famous for adventure sports. Enjoy paragliding, skiing, snow scooter rides, and a cable car ride. If visiting in winter, experience the beautiful snow-covered landscapes. Return to Manali for an overnight stay.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>3</span></div>
+                    <div class="description">
+                        <h3>Rohtang Pass / Atal Tunnel Excursion (Optional)</h3>
+                        <p>Early morning, take an excursion to Rohtang Pass (subject to weather & permit availability). If Rohtang is closed, visit Atal Tunnel & Sissu Valley, offering mesmerizing views of the Himalayas. Spend time in the snow-covered meadows before returning to Manali.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>4</span></div>
+                    <div class="description">
+                        <h3>Local Sightseeing – Temples & Waterfalls</h3>
+                        <p>Visit Hadimba Devi Temple, known for its unique wooden architecture. Explore Manu Temple, Vashisht Hot Water Springs, and Jogini Waterfall. Enjoy a relaxing evening by the Beas River. Overnight stay in Manali.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>5</span></div>
+                    <div class="description">
+                        <h3>Kullu & Naggar Castle</h3>
+                        <p>After breakfast, take a scenic drive to Kullu, where you can enjoy river rafting on the Beas River. Visit the famous Naggar Castle, an ancient heritage site with stunning valley views. Explore local art at Nicholas Roerich Art Gallery before returning to Manali.
+                        </p>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>6</span></div>
+                    <div class="description">
+                        <h3> Departure from Manali</h3>
+                        <p>After breakfast, check out from the hotel. Explore Manali at your leisure before departing for Delhi/Chandigarh via Volvo or private transport, marking the end of your memorable Himalayan getaway.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="budget-includes">
+                <h2>Budget Includes:</h2>
+                <ul>
+                    <li>Hotel stay (5 Nights) in Manali.</li>
+                    <li>Daily breakfast and dinner.</li>
+                    <li>Private cab for sightseeing.</li>
+                    <li>Volvo bus tickets (Delhi - Manali - Delhi).</li>
+                    <li> Snow & adventure sports assistance.</li>
+                    <li>Toll taxes & driver charges.</li>
+                    
+                </ul>
+            </div>
+
+            <div class="exclusions">
+                <h2>Exclusions:</h2>
+                <ul>
+                    <li>Rohtang Pass permit & taxi charges (as per govt. rules).</li>
+                    <li> Personal expenses (shopping, meals outside package, entry fees, etc.).</li>
+                    <li>Adventure sports (paragliding, skiing, etc.) – charges extra.</li>
+                    <li>Any extra sightseeing beyond itinerary.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="home-offer">
+        <div class="content">
+            <h3>Upto 50% off</h3>
+         <p>Get exciting discounts on tour packages. Book now and save big on your next adventure!</p>
+            <a href="book.html" class="btn">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="../index.html"><i class="fas fa-angle-right"></i> Home</a>
+                <a href="../about.html"><i class="fas fa-angle-right"></i> About</a>
+                <a href="../package.html"><i class="fas fa-angle-right"></i> Package</a>
+                <a href="../book.html"><i class="fas fa-angle-right"></i> Book</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+                <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a>
+                <a href="../term.html"><i class="fas fa-angle-right"></i> Term & Condition</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href=""><i class="fas fa-phone"></i> +91 9976543210</a>
+                <a href=""><i class="fas fa-phone"></i> +91 9976543311</a>
+                <a href=""><i class="fas fa-envelope"></i> packmytrip@gmail.com</a>
+                <a href=""><i class="fas fa-location"></i> Pali Rajasthan 306401</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; PackMyTrip All Right Reserved.</p>
+        </div>
+
+    </section>
+    <!-- Footer end -->
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="../js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const logoutBtn = document.getElementById('logoutBtn');
+            const historyLink = document.getElementById('historyLink');
+            const loginLink = document.getElementById('loginLink');
+            const logoutLink = document.getElementById('logoutLink');
+
+            logoutBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                localStorage.removeItem('isLoggedIn');
+                localStorage.removeItem('userId');
+                localStorage.removeItem('userEmail');
+                window.location.href = '../index.html';
+            });
+
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (isLoggedIn === 'true') {
+                historyLink.style.display = 'block';
+                logoutLink.style.display = 'block';
+                loginLink.style.display = 'none';
+            } else {
+                historyLink.style.display = 'none';
+                logoutLink.style.display = 'none';
+                loginLink.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>

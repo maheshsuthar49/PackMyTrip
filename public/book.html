@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - PackMyTrip</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section class="header">
+        <a href="index.html" class="logo">Pack<span>My</span>Trip</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="package.html">Package</a>
+            <a href="book.html">Book</a>
+        </nav>
+        <div class="icons">
+            <div class="history-icon" id="loginLink"><a href="login.html" title="Login"><i class='bx bxs-user'></i></a></div>
+            <div class="history-icon" id="historyLink" style="display: none;"><a href="history.html" title="Booking History"><i class='bx bx-history'></i></a></div>
+            <div class="history-icon" id="logoutLink" style="display: none;"><a href="#" id="logoutBtn" title="Logout"><i class='bx bx-log-out'></i></a></div>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    <div class="heading" style="background: url('images/banner-bg3.jpg');">
+        <h1>Book Now</h1>
+    </div>
+
+    <section class="booking">
+        <!-- <h1 class="heading-title">Book your trip!</h1> -->
+        <form id="bookingForm" class="book_form">
+            <!-- hidden package name -->
+            <input type="hidden" name="package_name" value="Forts and Palaces of Rajasthan">
+            <input type="hidden" name="price" value="25000">
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>Name:</span>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="inputBox">
+                    <span>Email:</span>
+                    <input type="email" id="email" name="email"placeholder="Enter your email" required>
+                </div>
+                <div class="inputBox">
+                    <span>Phone:</span>
+                    <input type='text' id="phone" name="phone" placeholder="Enter your number" required maxlength="10">
+                </div>
+                <div class="inputBox">
+                    <span>Address:</span>
+                    <input type="text" id="address" placeholder="Enter your address" required onchange="updateTotalPrice()">
+                </div>
+                <div class="inputBox">
+                    <span>Package:</span>
+                    <select id="package" name="package" required>
+                        <option value="" disabled selected>Select Package</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Kullu Manali">Kullu Manali</option>
+                            <option value="Kashmir">Kashmir</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="Chardham">Chardham</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Andaman">Andaman</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Meghalaya & Assam">Meghalaya & Assam</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                        </select>
+                </div>
+                <div class="inputBox">
+                    <span>Guests:</span>
+                    <input type="number" id="guests" placeholder="Number of guests" min="1" required>
+                </div>
+                <div class="inputBox">
+                    <span>Arrival:</span>
+                    <input type="date" id="arrival" name="arrival" required>
+                </div>
+                <div class="inputBox">
+                    <span>Leaving Date:(Optional)</span>
+                    <input type="date" id="leaving" name="leaving">
+                </div>
+                <div class="inputBox">
+                    <span>Total Price (INR):</span>
+                    <input type="text" id="total_price" name="total"  readonly>
+                </div>
+            </div>
+            <div class="book-btn">
+                <button class="btn">Book</button>
+            </div>
+        </form>
+    </section>
+
+    <div id="toastContainer" class="toast-container"></div>
+
+   <!-- Footer -->
+   <section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="index.html"><i class="fas fa-angle-right"></i> Home</a>
+            <a href="about.html"><i class="fas fa-angle-right"></i> About</a>
+            <a href="package.html"><i class="fas fa-angle-right"></i> Package</a>
+            <a href="book.html"><i class="fas fa-angle-right"></i> Book</a>
+        </div>
+
+        <div class="box">
+            <h3>Extra Links</h3>
+            <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+            <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
+            <a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a>
+            <a href="../public/term.html"><i class="fas fa-angle-right"></i> Term & Condition</a>
+
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href=""><i class="fas fa-phone"></i> +91 9976543210</a>
+            <a href=""><i class="fas fa-phone"></i> +91 9976543311</a>
+            <a href=""><i class="fas fa-envelope"></i> packmytrip@gmail.com</a>
+            <a href=""><i class="fas fa-location"></i> Pali Rajasthan306401</a>
+        </div>
+
+        <div class="box">
+            <h3>Follow us</h3>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&#169; PackMyTrip All Right Reserved.</p>
+    </div>
+
+</section>
+<!-- Footer end -->
+
+<script>
+    const packagePrices = {
+       'Rajasthan': 32999,
+         'Kullu Manali': 19999,
+            'Kashmir': 28999,
+            'Kerala': 40999,
+            'Uttarakhand': 35999,
+            'Chardham': 32999,
+            'Sikkim': 38000,
+            'Bhutan': 49000,
+            'Andaman': 40000,
+            'Tamil Nadu': 40000,
+            'Goa': 24999,
+            'Meghalaya & Assam': 32999,
+            'Lakshadweep': 44000
+    };
+
+    function updateTotalPrice() {
+        const package = document.getElementById("package").value;
+        const guests = parseInt(document.getElementById("guests").value) || 1;
+        const pricePerPerson = packagePrices[package] || 0;
+        const total = guests * pricePerPerson;
+        document.getElementById("total_price").value = total;
+    }
+
+    document.getElementById("package").addEventListener("change", updateTotalPrice);
+    document.getElementById("guests").addEventListener("input", updateTotalPrice);
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        if (isLoggedIn !== 'true') {
+            window.location.href = 'login.html';
+        }
+    });
+</script>
+
+<script src="js/bookform.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const logoutBtn = document.getElementById('logoutBtn');
+        const historyLink = document.getElementById('historyLink');
+        const loginLink = document.getElementById('loginLink');
+        const logoutLink = document.getElementById('logoutLink');
+
+        logoutBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            localStorage.removeItem('isLoggedIn');
+            localStorage.removeItem('userId');
+            localStorage.removeItem('userEmail');
+            window.location.href = 'index.html';
+        });
+
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        if (isLoggedIn === 'true') {
+            historyLink.style.display = 'block';
+            logoutLink.style.display = 'block';
+            loginLink.style.display = 'none';
+        } else {
+            historyLink.style.display = 'none';
+            logoutLink.style.display = 'none';
+            loginLink.style.display = 'block';
+        }
+    });
+</script>
+</body>
+
+</html>

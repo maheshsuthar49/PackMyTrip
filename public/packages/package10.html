@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Nadu - PackMyTrip</title>
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* @media (max-width: 768px) {
+      .day {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .day-number {
+        margin-bottom: 10px;
+      }
+    } */
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <a href="../index.html" class="logo">Pack<span>My</span>Trip</a>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../package.html">Package</a>
+            <a href="../book.html">Book</a>
+        </nav>
+        <div class="icons">
+            <div class="history-icon" id="loginLink"><a href="../login.html" title="Login"><i class='bx bxs-user'></i></a></div>
+            <div class="history-icon" id="historyLink" style="display: none;"><a href="../history.html" title="Booking History"><i class='bx bx-history'></i></a></div>
+            <div class="history-icon" id="logoutLink" style="display: none;"><a href="#" id="logoutBtn" title="Logout"><i class='bx bx-log-out'></i></a></div>
+          </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!-- Header Section end -->
+
+    <div class="heading" style="background: url('../images/Tamil\ Tour.jpg') no-repeat center/cover;">
+        <p>It's time for Exploring</p>
+        <h1>Tamil Nadu</h1>
+    </div>
+    <!-- About Section -->
+    <section class="about">
+        <div class="image">
+            <img src="../images/Tamil Tour1.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content">
+            <h3>Tamil Nadu Tour</h3>
+            <p>Witness the architectural marvels of Chennai, Mahabalipuram, and Madurai, experience spirituality in Rameswaram, enjoy the scenic beauty of Kodaikanal and Ooty, and soak in the coastal charm of Kanyakumari.
+      </p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>9 NIGHTS 10 DAYS</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-car"></i>
+                    <span>ROAD TRIP</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Start: & End: Chennai</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-hotel"></i>
+                    <span class="icon-star" style="display: flex; gap: 3px; height: 21px;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-tag"></i>
+                    <span>Price: ₹40,000</span>
+                </div>
+                <div class="content">
+                    <a href="../book.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="itinerary">
+            <h2>Itinerary</h2>
+
+            <div class="day-container">
+                <!-- Dotted line spanning all days -->
+                <div class="dotted-line"></div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>1</span></div>
+                    <div class="description">
+                        <h3>Arrival in Chennai – Sightseeing</h3>
+                        <p>Arrive at Chennai International Airport or Railway Station, where our representative will greet you. Visit Marina Beach, Kapaleeshwarar Temple, Fort St. George, and Santhome Cathedral before an overnight stay in Chennai.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>2</span></div>
+                    <div class="description">
+                        <h3>Chennai to Mahabalipuram (60 km / 2 hrs) – Sightseeing</h3>
+                        <p>After breakfast, drive to Mahabalipuram, famous for its UNESCO-listed rock-cut temples. Visit Shore Temple, Arjuna’s Penance, and the Five Rathas. Enjoy the beach before staying overnight in Mahabalipuram.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>3</span></div>
+                    <div class="description">
+                        <h3> Mahabalipuram to Pondicherry (100 km / 3 hrs)</h3>
+                        <p>Proceed to Pondicherry, a former French colony. Explore Aurobindo Ashram, Auroville, Rock Beach, and French Quarters. Enjoy the colonial charm before staying overnight in Pondicherry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>4</span></div>
+                    <div class="description">
+                        <h3> Pondicherry to Thanjavur (165 km / 4 hrs)</h3>
+                        <p>After breakfast, drive to Thanjavur, known for its magnificent temples. Visit Brihadeeswarar Temple, a UNESCO World Heritage site, and explore the Thanjavur Palace and Art Gallery before an overnight stay.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>5</span></div>
+                    <div class="description">
+                        <h3>Thanjavur to Madurai (190 km / 5 hrs) – Sightseeing</h3>
+                        <p>Proceed to Madurai, the cultural capital of Tamil Nadu. Visit the famous Meenakshi Amman Temple, Thirumalai Nayakkar Mahal, and the Gandhi Memorial Museum before staying overnight in Madurai.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>6</span></div>
+                    <div class="description">
+                        <h3> Madurai to Rameswaram (170 km / 3.5 hrs)</h3>
+                        <p>Travel to Rameswaram, a sacred Hindu pilgrimage site. Visit Ramanathaswamy Temple, Pamban Bridge, Dhanushkodi, and Agni Theertham before an overnight stay.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>7</span></div>
+                    <div class="description">
+                        <h3> Rameswaram to Kanyakumari (310 km / 6 hrs)</h3>
+                        <p>Drive to Kanyakumari, the southernmost tip of India. Visit Vivekananda Rock Memorial, Thiruvalluvar Statue, Kanyakumari Temple, and witness the breathtaking sunset before staying overnight.
+                        </p>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>8</span></div>
+                    <div class="description">
+                        <h3>Kanyakumari to Kodaikanal (330 km / 7 hrs)</h3>
+                        <p>Head to Kodaikanal, a beautiful hill station. Visit Coaker’s Walk, Bryant Park, Silver Cascade Falls, and Kodai Lake before staying overnight.
+                        </p>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>9</span></div>
+                    <div class="description">
+                        <h3> Kodaikanal to Ooty (250 km / 6 hrs)</h3>
+                        <p>Proceed to Ooty, the 'Queen of Hill Stations.' Visit Ooty Lake, Botanical Gardens, Doddabetta Peak, and Tea Museum before an overnight stay in Ooty.
+                        </p>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>10</span></div>
+                    <div class="description">
+                        <h3>Ooty to Coimbatore (85 km / 3 hrs) – Departure</h3>
+                        <p>After breakfast, check out and proceed to Coimbatore for your onward journey, concluding your Tamil Nadu adventure.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="budget-includes">
+                <h2>Budget Includes:</h2>
+                <ul>
+                    <li>Accommodation in hotels/resorts.</li>
+                    <li>Daily breakfast & dinner.</li>
+                    <li>Private transport for sightseeing.</li>
+                    <li>Entry fees for monuments & temples.</li>
+                    <li>Temple darshan assistance.</li>
+                    
+                </ul>
+            </div>
+
+            <div class="exclusions">
+                <h2>Exclusions:</h2>
+                <ul>
+                    <li>Airfare/train tickets.</li>
+                    <li> Boat rides & special pooja fees.</li>
+                    <li>Personal expenses & adventure activities.</li>
+                    <li>Travel Insurance.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="home-offer">
+        <div class="content">
+            <h3>Upto 50% off</h3>
+         <p>Get exciting discounts on tour packages. Book now and save big on your next adventure!</p>
+            <a href="book.html" class="btn">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="../index.html"><i class="fas fa-angle-right"></i> Home</a>
+                <a href="../about.html"><i class="fas fa-angle-right"></i> About</a>
+                <a href="../package.html"><i class="fas fa-angle-right"></i> Package</a>
+                <a href="../book.html"><i class="fas fa-angle-right"></i> Book</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+                <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a>
+                <a href="../term.html"><i class="fas fa-angle-right"></i> Term & Condition</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href=""><i class="fas fa-phone"></i> +91 9976543210</a>
+                <a href=""><i class="fas fa-phone"></i> +91 9976543311</a>
+                <a href=""><i class="fas fa-envelope"></i> packmytrip@gmail.com</a>
+                <a href=""><i class="fas fa-location"></i> Pali Rajasthan 306401</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; PackMyTrip All Right Reserved.</p>
+        </div>
+
+    </section>
+    <!-- Footer end -->
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const logoutBtn = document.getElementById('logoutBtn');
+            const historyLink = document.getElementById('historyLink');
+            const loginLink = document.getElementById('loginLink');
+            const logoutLink = document.getElementById('logoutLink');
+
+            logoutBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                localStorage.removeItem('isLoggedIn');
+                localStorage.removeItem('userId');
+                localStorage.removeItem('userEmail');
+                window.location.href = '../index.html';
+            });
+
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (isLoggedIn === 'true') {
+                historyLink.style.display = 'block';
+                logoutLink.style.display = 'block';
+                loginLink.style.display = 'none';
+            } else {
+                historyLink.style.display = 'none';
+                logoutLink.style.display = 'none';
+                loginLink.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>

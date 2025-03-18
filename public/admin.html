@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin Login</title>
+</head>
+<body>
+    <div class="center-wrapper">
+        <section class="login">
+            <h1 class="heading-title">Admin Login</h1>
+            <form id="adminLoginForm" class="book_form">
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Email :</span>
+                        <input type="email" id="adminEmail" placeholder="enter your email" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Password :</span>
+                        <input type="password" id="adminPassword" placeholder="enter your password" required>
+                    </div>
+                </div>
+                <div class="book-btn">
+                    <button type="submit" class="btn">Login</button>
+                </div>
+            </form>
+        </section>
+        <!-- Toast Container -->
+        <div id="toastContainer" class="toast-container"></div>
+    </div>
+    <script src="js/admin.js"></script>
+</body>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register - PackMyTrip</title>
+</head>
+<body>
+    <div class="center-wrapper">
+        <section class="login">
+            <h1 class="heading-title">Register</h1>
+
+            <form id="registerForm" class="book_form">
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Full Name :</span>
+                        <input type="text" id="name" placeholder="enter your name" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Email :</span>
+                        <input type="email" id="email" placeholder="enter your email" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Password :</span>
+                        <input type="password" id="password" placeholder="enter your password" required minlength="8">
+                    </div>
+                </div>
+                <div class="book-btn">
+                    <button type="submit" class="btn">Register</button>
+                </div>
+                <p>Already have an account? <a href="login.html">Login Now</a></p>
+            </form>
+        </section>
+        <!-- Toast Container -->
+        <div id="toastContainer" class="toast-container"></div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>

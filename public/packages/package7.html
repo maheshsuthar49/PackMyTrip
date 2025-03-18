@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikkim - PackMyTrip</title>
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* @media (max-width: 768px) {
+      .day {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .day-number {
+        margin-bottom: 10px;
+      }
+    } */
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <a href="../index.html" class="logo">Pack<span>My</span>Trip</a>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../package.html">Package</a>
+            <a href="../book.html">Book</a>
+        </nav>
+        <div class="icons">
+            <div class="history-icon" id="loginLink"><a href="../login.html" title="Login"><i class='bx bxs-user'></i></a></div>
+            <div class="history-icon" id="historyLink" style="display: none;"><a href="../history.html" title="Booking History"><i class='bx bx-history'></i></a></div>
+            <div class="history-icon" id="logoutLink" style="display: none;"><a href="#" id="logoutBtn" title="Logout"><i class='bx bx-log-out'></i></a></div>
+          </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!-- Header Section end -->
+
+    <div class="heading" style="background: url('../images/Sikkim\ Tour.jpg') no-repeat center/cover;">
+        <p>It's time for Exploring</p>
+        <h1>Sikkim</h1>
+    </div>
+    <!-- About Section -->
+    <section class="about">
+        <div class="image">
+            <img src="../images/Sikkim Tour1.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content">
+            <h3>Sikkim Tour</h3>
+            <p>Experience the magical beauty of Sikkim -  Explore the charming hill towns of Gangtok, Lachen, and Lachung, marvel at the stunning landscapes of Tsomgo Lake and Gurudongmar Lake, and experience the serenity of monasteries. Witness breathtaking views of the Himalayas, enjoy adventure-filled moments, and immerse yourself in the unique culture and traditions of this enchanting region.
+      </p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>7 NIGHTS 8 DAYS</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-car"></i>
+                    <span>ROAD TRIP</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Start & End: Bagdogra</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-hotel"></i>
+                    <span class="icon-star" style="display: flex; gap: 3px; height: 21px;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-tag"></i>
+                    <span>Price: ₹38,000</span>
+                </div>
+                <div class="content">
+                    <a href="../book.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="itinerary">
+            <h2>Itinerary</h2>
+
+            <div class="day-container">
+                <!-- Dotted line spanning all days -->
+                <div class="dotted-line"></div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>1</span></div>
+                    <div class="description">
+                        <h3>Arrival in Gangtok</h3>
+                        <p>Arrive at Bagdogra Airport or NJP Railway Station, where our representative will greet you. Drive to Gangtok, the capital of Sikkim. Check into your hotel and spend the evening at MG Marg, exploring local markets and trying authentic Sikkimese cuisine. Stay overnight in Gangtok.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>2</span></div>
+                    <div class="description">
+                        <h3>Tsomgo Lake & Baba Mandir Excursion</h3>
+                        <p>After breakfast, drive to the breathtaking Tsomgo Lake, a glacial lake surrounded by snow-clad mountains. Visit Baba Harbhajan Singh Mandir, a revered shrine. If time permits, visit Nathula Pass (subject to permit availability) for a mesmerizing experience at the Indo-China border. Return to Gangtok for an overnight stay.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>3</span></div>
+                    <div class="description">
+                        <h3> Gangtok to Lachen (120 km / 6 hrs)</h3>
+                        <p> After breakfast, head towards Lachen, a picturesque village in North Sikkim. En route, visit the stunning Seven Sisters Waterfalls, Singhik Viewpoint, and Naga Waterfalls. Arrive in Lachen, check into your hotel, and enjoy the serene mountain atmosphere before an overnight stay.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>4</span></div>
+                    <div class="description">
+                        <h3>Gurudongmar Lake Excursion – Transfer to Lachung</h3>
+                        <p>Wake up early and drive to Gurudongmar Lake, one of the highest lakes in the world, offering breathtaking views of the snow-covered mountains. Return to Lachen for lunch and proceed to Lachung, another beautiful valley town. Check into your hotel and relax. Stay overnight in Lachung.</p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>5</span></div>
+                    <div class="description">
+                        <h3>Yumthang Valley & Zero Point Excursion – Return to Gangtok</h3>
+                        <p>After breakfast, visit Yumthang Valley, known as the 'Valley of Flowers,' offering stunning alpine landscapes and hot springs. If accessible, visit Zero Point, where you can witness snow even in summer. Return to Gangtok in the evening for an overnight stay.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>6</span></div>
+                    <div class="description">
+                        <h3>Gangtok to Pelling (120 km / 5 hrs)</h3>
+                        <p>After breakfast, drive to Pelling, a serene hill town known for its mesmerizing views of Mount Kanchenjunga. Check into your hotel and visit Pemayangtse Monastery and Rabdentse Ruins, offering a glimpse of Sikkim’s rich history. Overnight stay in Pelling.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>7</span></div>
+                    <div class="description">
+                        <h3>Pelling Sightseeing – Return to Gangtok</h3>
+                        <p>Explore Kanchenjunga Waterfalls, Khecheopalri Lake, and Skywalk. Enjoy the breathtaking views before heading back to Gangtok. Spend the evening at leisure before an overnight stay.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>8</span></div>
+                    <div class="description">
+                        <h3>Departure from Gangtok</h3>
+                        <p>Enjoy a peaceful morning in Auli before heading back to Dehradun for your departure, concluding your memorable Uttarakhand journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="budget-includes">
+                <h2>Budget Includes:</h2>
+                <ul>
+                    <li>Accommodation in hotels/resorts.</li>
+                    <li>Daily breakfast and dinner.</li>
+                    <li>Private transport for all sightseeing.</li>
+                    <li>Tsomgo Lake & Baba Mandir excursion.</li>
+                    <li>Gurudongmar Lake & Yumthang Valley tour.</li>
+                    <li>Zero Point excursion.</li>
+
+                </ul>
+            </div>
+
+            <div class="exclusions">
+                <h2>Exclusions:</h2>
+                <ul>
+                    <li>Airfare/train tickets.</li>
+                    <li>Nathula Pass permit (subject to availability).</li>
+                    <li>Personal expenses & adventure activities.</li>
+                    <li>Travel insurance.</li>
+                    <li>Anything not mentioned in the inclusions.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="home-offer">
+        <div class="content">
+            <h3>Upto 50% off</h3>
+         <p>Get exciting discounts on tour packages. Book now and save big on your next adventure!</p>
+            <a href="book.html" class="btn">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="../index.html"><i class="fas fa-angle-right"></i> Home</a>
+                <a href="../about.html"><i class="fas fa-angle-right"></i> About</a>
+                <a href="../package.html"><i class="fas fa-angle-right"></i> Package</a>
+                <a href="../book.html"><i class="fas fa-angle-right"></i> Book</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+                <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a>
+                <a href="../term.html"><i class="fas fa-angle-right"></i> Term & Condition</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href=""><i class="fas fa-phone"></i> +91 9976543210</a>
+                <a href=""><i class="fas fa-phone"></i> +91 9976543311</a>
+                <a href=""><i class="fas fa-envelope"></i> packmytrip@gmail.com</a>
+                <a href=""><i class="fas fa-location"></i> Pali Rajasthan 306401</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; PackMyTrip All Right Reserved.</p>
+        </div>
+
+    </section>
+    <!-- Footer end -->
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const logoutBtn = document.getElementById('logoutBtn');
+            const historyLink = document.getElementById('historyLink');
+            const loginLink = document.getElementById('loginLink');
+            const logoutLink = document.getElementById('logoutLink');
+
+            logoutBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                localStorage.removeItem('isLoggedIn');
+                localStorage.removeItem('userId');
+                localStorage.removeItem('userEmail');
+                window.location.href = '../index.html';
+            });
+
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (isLoggedIn === 'true') {
+                historyLink.style.display = 'block';
+                logoutLink.style.display = 'block';
+                loginLink.style.display = 'none';
+            } else {
+                historyLink.style.display = 'none';
+                logoutLink.style.display = 'none';
+                loginLink.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>

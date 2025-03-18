@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhutan - PackMyTrip</title>
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* @media (max-width: 768px) {
+      .day {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .day-number {
+        margin-bottom: 10px;
+      }
+    } */
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <a href="../index.html" class="logo">Pack<span>My</span>Trip</a>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../package.html">Package</a>
+            <a href="../book.html">Book</a>
+        </nav>
+        <div class="icons">
+            <div class="history-icon" id="loginLink"><a href="../login.html" title="Login"><i class='bx bxs-user'></i></a></div>
+            <div class="history-icon" id="historyLink" style="display: none;"><a href="../history.html" title="Booking History"><i class='bx bx-history'></i></a></div>
+            <div class="history-icon" id="logoutLink" style="display: none;"><a href="#" id="logoutBtn" title="Logout"><i class='bx bx-log-out'></i></a></div>
+          </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!-- Header Section end -->
+
+    <div class="heading" style="background: url('../images/Bhutan\ Tour.jpg') no-repeat center/cover;">
+        <p>It's time for Exploring</p>
+        <h1>Bhutan</h1>
+    </div>
+    <!-- About Section -->
+    <section class="about">
+        <div class="image">
+            <img src="../images/Bhutan Tour1.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content">
+            <h3>Bhutan Tour</h3>
+            <p>Embark on an unforgettable journey through the ‘Land of the Thunder Dragon’ -  Discover the serene monasteries, breathtaking landscapes, and rich cultural heritage of this Himalayan kingdom. Visit the charming towns of Paro, Thimphu, Punakha, and Phobjikha Valley while experiencing Bhutan’s warm hospitality, stunning dzongs, and mesmerizing mountain views.
+      </p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>7 NIGHTS 8 DAYS</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-car"></i>
+                    <span>ROAD TRIP</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Start & End: Paro</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-hotel"></i>
+                    <span class="icon-star" style="display: flex; gap: 3px; height: 21px;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-tag"></i>
+                    <span>Price: ₹49,999</span>
+                </div>
+                <div class="content">
+                    <a href="../book.html" class="btn">Book Now</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="itinerary">
+            <h2>Itinerary</h2>
+
+            <div class="day-container">
+                <!-- Dotted line spanning all days -->
+                <div class="dotted-line"></div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>1</span></div>
+                    <div class="description">
+                        <h3>Arrival in Paro – Transfer to Thimphu</h3>
+                        <p>Arrive at Paro International Airport, where our representative will greet you. Drive to Thimphu, the capital of Bhutan, passing through scenic valleys and rivers. Check into your hotel and visit the Tashichho Dzong, a stunning fortress that serves as the government’s administrative center. Spend the evening exploring local markets before an overnight stay in Thimphu.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>2</span></div>
+                    <div class="description">
+                        <h3>Thimphu Sightseeing</h3>
+                        <p>After breakfast, visit the iconic Buddha Dordenma Statue, offering panoramic views of the city. Explore the National Memorial Chorten, the Changangkha Lhakhang Monastery, and the Motithang Takin Preserve to see Bhutan’s national animal. Later, visit the Simply Bhutan Museum to experience Bhutanese culture before an overnight stay.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>3</span></div>
+                    <div class="description">
+                        <h3> Thimphu to Punakha (75 km / 3 hrs)</h3>
+                        <p>Drive to Punakha, crossing the scenic Dochula Pass, where you can see the 108 memorial chortens and breathtaking Himalayan peaks. Visit the magnificent Punakha Dzong, one of Bhutan’s most beautiful fortresses, located at the confluence of the Mo and Pho Rivers. Later, take a short hike to Chimi Lhakhang, the ‘Temple of Fertility.’ Stay overnight in Punakha.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>4</span></div>
+                    <div class="description">
+                        <h3> Punakha to Phobjikha Valley (80 km / 3 hrs)</h3>
+                        <p>After breakfast, head to the stunning Phobjikha Valley, home to the rare black-necked cranes. Visit the serene Gangtey Monastery and enjoy a nature walk through the valley’s picturesque landscapes. Spend the evening soaking in the peaceful atmosphere before an overnight stay in Phobjikha.</p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>5</span></div>
+                    <div class="description">
+                        <h3>Phobjikha to Paro (180 km / 6 hrs)</h3>
+                        <p>Depart for Paro, enjoying the scenic drive through Bhutan’s beautiful countryside. En route, stop at Rinpung Dzong, a beautiful fortress with spectacular architecture. Visit the National Museum of Bhutan to learn about the country’s rich history before an overnight stay in Paro.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>6</span></div>
+                    <div class="description">
+                        <h3> Hike to Tiger’s Nest Monastery</h3>
+                        <p>Early in the morning, embark on a thrilling hike to Tiger’s Nest Monastery (Taktsang Monastery), Bhutan’s most iconic landmark, perched on a cliffside. The 4-5 hour trek offers breathtaking views of the valley below. After descending, relax at a traditional Bhutanese farmhouse with a hot stone bath (optional). Stay overnight in Paro.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>7</span></div>
+                    <div class="description">
+                        <h3>Chele La Pass Excursion</h3>
+                        <p>Take a scenic drive to Chele La Pass, one of Bhutan’s highest motorable roads, offering panoramic views of the Himalayan range. Visit the Kila Gompa Nunnery, one of Bhutan’s oldest nunneries, before returning to Paro for some leisure time and shopping. Overnight stay in Paro.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="day">
+                    <div class="day-circle"><span>Day</span><span>8</span></div>
+                    <div class="description">
+                        <h3>Departure from Paro</h3>
+                        <p>After breakfast, check out and proceed to Paro International Airport for your onward journey, concluding your magical Bhutan experience.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="budget-includes">
+                <h2>Budget Includes:</h2>
+                <ul>
+                    <li>Accommodation in hotels/resorts.</li>
+                    <li>Daily breakfast and dinner.</li>
+                    <li>Private transport for all sightseeing.</li>
+                    <li>Licensed Bhutanese tour guide.</li>
+                    <li>Entry permits & monument fees.</li>
+                    <li>Hike to Tiger’s Nest Monastery.</li>
+                </ul>
+            </div>
+
+            <div class="exclusions">
+                <h2>Exclusions:</h2>
+                <ul>
+                    <li>Airfare/train tickets.</li>
+                    <li> Personal expenses & adventure activities.</li>
+                    <li> Hot stone bath & optional cultural programs.</li>
+                    <li>Travel insurance.</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="home-offer">
+        <div class="content">
+            <h3>Upto 50% off</h3>
+         <p>Get exciting discounts on tour packages. Book now and save big on your next adventure!</p>
+            <a href="book.html" class="btn">Book Now</a>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="../index.html"><i class="fas fa-angle-right"></i> Home</a>
+                <a href="../about.html"><i class="fas fa-angle-right"></i> About</a>
+                <a href="../package.html"><i class="fas fa-angle-right"></i> Package</a>
+                <a href="../book.html"><i class="fas fa-angle-right"></i> Book</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i> Ask Questions</a>
+                <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a>
+                <a href="../term.html"><i class="fas fa-angle-right"></i> Term & Condition</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href=""><i class="fas fa-phone"></i> +91 9976543210</a>
+                <a href=""><i class="fas fa-phone"></i> +91 9976543311</a>
+                <a href=""><i class="fas fa-envelope"></i> packmytrip@gmail.com</a>
+                <a href=""><i class="fas fa-location"></i> Pali Rajasthan 306401</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; PackMyTrip All Right Reserved.</p>
+        </div>
+
+    </section>
+    <!-- Footer end -->
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const logoutBtn = document.getElementById('logoutBtn');
+            const historyLink = document.getElementById('historyLink');
+            const loginLink = document.getElementById('loginLink');
+            const logoutLink = document.getElementById('logoutLink');
+
+            logoutBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                localStorage.removeItem('isLoggedIn');
+                localStorage.removeItem('userId');
+                localStorage.removeItem('userEmail');
+                window.location.href = '../index.html';
+            });
+
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (isLoggedIn === 'true') {
+                historyLink.style.display = 'block';
+                logoutLink.style.display = 'block';
+                loginLink.style.display = 'none';
+            } else {
+                historyLink.style.display = 'none';
+                logoutLink.style.display = 'none';
+                loginLink.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>
