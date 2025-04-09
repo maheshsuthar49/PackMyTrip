@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const BASE_URL = "https://pack-mytrip.vercel.app";
     // Add the showToast function
     function showToast(message) {
         const toastContainer = document.getElementById('toastContainer');
@@ -27,30 +26,33 @@ document.addEventListener('DOMContentLoaded', function() {
     if (registerForm) {
         registerForm.addEventListener('submit', async function(event) {
             event.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value
+            };
 
             try {
-                const response = await fetch(`${BASE_URL}/register`, {  
+                const response = await fetch('/register', {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ name, email, password })
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
                 });
 
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
+                const data = await response.json();
 
-                const result = await response.json();
-                if (result.success) {
-                    showToast('Registration successful');
+                if (response.status === 201) {
+                    showToast('Registration successful! Please log in.');
+                    registerForm.reset();
+                    window.location.href = 'login.html';
                 } else {
-                    showToast(result.message);
+                    showToast('Registration failed: ' + data.message);
                 }
             } catch (error) {
-                console.error('Error:', error);
-                showToast('An error occurred');
+                showToast('Error: ' + error.message);
             }
         });
     }
@@ -60,31 +62,33 @@ document.addEventListener('DOMContentLoaded', function() {
     if (loginForm) {
         loginForm.addEventListener('submit', async function(event) {
             event.preventDefault();
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
+
+            const formData = {
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value
+            };
 
             try {
                 const response = await fetch('/login', {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ email, password })
+                    body: JSON.stringify(formData),
                 });
 
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
+                const data = await response.json();
 
-                const result = await response.json();
-                if (result.success) {
-                    showToast('Login successful');
+                if (response.status === 200) {
+                    showToast('Login successful!');
+                    localStorage.setItem('userId', data.userId);
+                    localStorage.setItem('isLoggedIn', 'true');
+                    window.location.href = 'index.html';
                 } else {
-                    showToast(result.message);
+                    showToast('Login failed: ' + data.message);
                 }
             } catch (error) {
-                console.error('Error:', error);
-                showToast('An error occurred');
+                showToast('Error: ' + error.message);
             }
         });
     }

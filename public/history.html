@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History - PackMyTrip</title>
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- custom css file -->
     <link rel="stylesheet" href="css/style.css">
@@ -40,65 +41,61 @@
         <div id="historyContainer"></div>
     </section>
 
-    <!-- Footer -->
-    <section class="footer">
-        <!-- Footer content here -->
-    </section>
-    <script>
-        const BASE_URL = "https://pack-mytrip.vercel.app";
+    
 
-        document.addEventListener('DOMContentLoaded', async () => {
-            const isLoggedIn = localStorage.getItem('isLoggedIn');
-            if (isLoggedIn !== 'true') {
-                window.location.href = 'login.html';
-                return;
-            }
-    
-            const userId = localStorage.getItem('userId');
-            await fetchAndUpdateHistory(userId); // ✅ Function call to fetch history
-        });
-    
-        // ✅ Function to fetch and update booking history
-        async function fetchAndUpdateHistory(userId) {
-            try {
-                const response = await fetch(`${BASE_URL}/bookings?userId=${userId}`);
-                const bookings = await response.json();
-                const historyContainer = document.getElementById('historyContainer');
-    
-                historyContainer.innerHTML = '';  // ✅ Ensure old data is cleared before adding new
-    
-                bookings.forEach(booking => {
-                    const bookingElement = document.createElement('div');
-                    bookingElement.className = 'booking';
-                    bookingElement.innerHTML = `
-                        <h3>${booking.package_name}</h3>
-                        <p>Name: ${booking.name}</p>
-                        <p>Email: ${booking.email}</p>
-                        <p>Phone: ${booking.phone}</p>
-                        <p>Guests: ${booking.guests}</p>
-                        <p>Arrival: ${new Date(booking.arrival).toLocaleDateString()}</p>
-                        <p>Leaving: ${new Date(booking.leaving).toLocaleDateString()}</p>
-                        <p>Total Price: ₹${booking.total_price}</p>
-                        <p>Booking Date: ${new Date(booking.createdAt).toLocaleDateString()}</p>
-                        <p>Booking Time: ${new Date(booking.createdAt).toLocaleTimeString()}</p>
-                        <p>Status: <strong style="color: ${booking.status === 'Confirmed' ? 'green' : 'red'}">${booking.status}</strong></p>
-                    `;
-                    historyContainer.appendChild(bookingElement);
-                });
-            } catch (error) {
-                console.error('Error fetching history:', error);
-            }
+<!-- Footer -->
+<section class="footer">
+    <!-- Footer content here -->
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        if (isLoggedIn !== 'true') {
+            window.location.href = 'login.html';
+            return;
         }
-    
-        // ✅ Auto-refresh history every 5 seconds without duplication
-        setInterval(async () => {
-            const userId = localStorage.getItem('userId');
-            await fetchAndUpdateHistory(userId);
-        }, 5000);  // ✅ Refresh every 5 seconds to reflect updates
-    </script>
-    
-    
-   
-    
+
+        const userId = localStorage.getItem('userId');
+        await fetchAndUpdateHistory(userId); // ✅ Function call to fetch history
+    });
+
+    // ✅ Function to fetch and update booking history
+    async function fetchAndUpdateHistory(userId) {
+        try {
+            const response = await fetch(`http://localhost:8000/bookings?userId=${userId}`);
+            const bookings = await response.json();
+            const historyContainer = document.getElementById('historyContainer');
+
+            historyContainer.innerHTML = '';  // ✅ Ensure old data is cleared before adding new
+
+            bookings.forEach(booking => {
+                const bookingElement = document.createElement('div');
+                bookingElement.className = 'booking';
+                bookingElement.innerHTML = `
+                    <h3>${booking.package_name}</h3>
+                    <p>Name: ${booking.name}</p>
+                    <p>Email: ${booking.email}</p>
+                    <p>Phone: ${booking.phone}</p>
+                    <p>Guests: ${booking.guests}</p>
+                    <p>Arrival: ${new Date(booking.arrival).toLocaleDateString()}</p>
+                    <p>Leaving: ${new Date(booking.leaving).toLocaleDateString()}</p>
+                    <p>Total Price: ₹${booking.total_price}</p>
+                    <p>Booking Date: ${new Date(booking.createdAt).toLocaleDateString()}</p>
+                    <p>Booking Time: ${new Date(booking.createdAt).toLocaleTimeString()}</p>
+                    <p>Status: <strong style="color: ${booking.status === 'Confirmed' ? 'green' : 'red'}">${booking.status}</strong></p>
+                `;
+                historyContainer.appendChild(bookingElement);
+            });
+        } catch (error) {
+            console.error('Error fetching history:', error);
+        }
+    }
+
+    // ✅ Auto-refresh history every 5 seconds without duplication
+    setInterval(async () => {
+        const userId = localStorage.getItem('userId');
+        await fetchAndUpdateHistory(userId);
+    }, 5000);  // ✅ Refresh every 5 seconds to reflect updates
+</script>
 </body>
 </html>

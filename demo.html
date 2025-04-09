@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itinerary</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+   
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .itinerary {
+        padding: 15px;
+      }
+      .day {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .description {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+      .description h3 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="itinerary">
+    <h2>Itinerary</h2>
+
+    <div class="day-container">
+      <!-- Dotted line spanning all days -->
+      <div class="dotted-line"></div>
+
+      <div class="day">
+        <div class="day-circle"><span>Day</span><span>1</span></div>
+        <div class="description">
+          <h3>Arrival in Delhi</h3>
+          <p>Upon arrival at Delhi, meeting and assistance followed by transfer to hotel. Overnight stay at hotel.</p>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="day-circle"><span>Day</span><span>2</span></div>
+        <div class="description">
+          <h3>Explore Delhi</h3>
+          <p>Breakfast at the hotel and enjoy the full day sightseeing of New Delhi in the morning, including Laxmi Narayan Temple, India Gate, Parliament House, and more. Overnight at the hotel.</p>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="day-circle"><span>Day</span><span>3</span></div>
+        <div class="description">
+          <h3>Delhi to Samode</h3>
+          <p>Breakfast at the hotel and drive to Samode. On arrival at Samode, enjoy sightseeing and a unique cultural experience.</p>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="day-circle"><span>Day</span><span>4</span></div>
+        <div class="description">
+          <h3>Jaipur Tour</h3>
+          <p>Explore the forts and palaces of Jaipur, including Amer Fort, City Palace, and Hawa Mahal. Enjoy a local cultural evening program.</p>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="day-circle"><span>Day</span><span>5</span></div>
+        <div class="description">
+          <h3>Jodhpur Exploration</h3>
+          <p>Drive to Jodhpur and visit Mehrangarh Fort, Umaid Bhawan Palace, and Jaswant Thada. Stay overnight at the hotel.</p>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="day-circle"><span>Day</span><span>6</span></div>
+        <div class="description">
+          <h3>Udaipur Sightseeing</h3>
+          <p>Travel to Udaipur and enjoy sightseeing, including Lake Pichola, City Palace, and Saheliyon-ki-Bari. Overnight at the hotel.</p>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="day-circle"><span>Day</span><span>7</span></div>
+        <div class="description">
+          <h3>Departure from Udaipur</h3>
+          <p>Conclude your trip with a morning walk around Udaipur markets and transfer to the airport for your departure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

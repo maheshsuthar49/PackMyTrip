@@ -1,5 +1,3 @@
-
-const BASE_URL = "https://pack-mytrip.vercel.app";
 // Add the showToast function
 function showToast(message) {
     const toastContainer = document.getElementById('toastContainer');
@@ -90,9 +88,11 @@ document.getElementById('bookingForm').addEventListener('submit', async function
     };
 
     try {
-        const response = await fetch(`${BASE_URL}/book`, { 
+        const response = await fetch('/book', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+                'Content-Type': 'application/json',
+            },
             body: JSON.stringify(formData),
         });
 

@@ -1,15 +1,13 @@
 const express = require('express');
 const session = require('express-session');
+const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
-const axios = require('axios');
-
-require('dotenv').config();
-const mongoose = require('mongoose');
+const axios = require('axios'); 
 
 const app = express();
-const port = process.env.PORT || 8000;
+const port = 8000;
 
 // Use CORS middleware
 app.use(cors());
@@ -22,12 +20,12 @@ app.use(bodyParser.json());
 app.use(session({ secret: 'adminSecret', resave: false, saveUninitialized: true }));
 
 // Connect to Local MongoDB
-mongoose.connect(process.env.MONGODB_URI, {})
+mongoose.connect('mongodb://localhost:27017/xyz', {})
     .then(() => {
-        console.log('MongoDB connected successfully to Atlas');
+        console.log('MongoDB connected successfully on localhost');
     })
     .catch((err) => {
-        console.error('Error connecting to MongoDB Atlas:', err);
+        console.error('Error connecting to MongoDB:', err);
     });
 
 // Gemini AI Configuration
@@ -165,6 +163,9 @@ app.post('/admin/confirm/:id', async (req, res) => {
             return res.status(404).json({ success: false, message: 'Booking not found' });
         }
 
+        // ✅ BookingHistory collection me bhi update karo
+        await BookingHistory.findOneAndUpdate({ email: booking.email, package_name: booking.package_name }, { status: 'Confirmed' });
+
         res.json({ success: true, message: 'Booking confirmed', booking });
     } catch (error) {
         console.error('Error confirming booking:', error);
@@ -182,6 +183,9 @@ app.post('/admin/reject/:id', async (req, res) => {
             return res.status(404).json({ success: false, message: 'Booking not found' });
         }
 
+        // ✅ BookingHistory collection me bhi update karo
+        await BookingHistory.findOneAndUpdate({ email: booking.email, package_name: booking.package_name }, { status: 'Rejected' });
+
         res.json({ success: true, message: 'Booking rejected', booking });
     } catch (error) {
         console.error('Error rejecting booking:', error);
@@ -191,8 +195,13 @@ app.post('/admin/reject/:id', async (req, res) => {
 
 // Fix: Fetch confirmed and pending bookings for history
 app.get('/bookings', async (req, res) => {
+    const userId = req.query.userId; // Get userId from request
+    if (!userId) {
+        return res.status(400).json({ message: 'User ID is required' });
+    }
+
     try {
-        const bookings = await Booking.find({});
+        const bookings = await BookingHistory.find({ userId: userId }); // Filter by userId
         res.status(200).json(bookings);
     } catch (error) {
         res.status(500).json({ message: 'Error fetching bookings', error });
@@ -278,10 +287,10 @@ app.post('/register', async (req, res) => {
         const newUser = new User({ name, email, password });
         await newUser.save();
         console.log('User registered successfully:', newUser);
-        res.status(201).json({ success: true, message: 'User registered successfully' });
+        res.status(201).json({ message: 'User registered successfully' });
     } catch (error) {
         console.error('Error registering user:', error);
-        res.status(500).json({ success: false, message: 'Error registering user' });
+        res.status(500).json({ message: 'Error registering user' });
     }
 });
 
@@ -292,14 +301,14 @@ app.post('/login', async (req, res) => {
         const user = await User.findOne({ email, password });
         if (user) {
             console.log('Login successful:', user);
-            res.status(200).json({ success: true, message: 'Login successful', userId: user._id, email: user.email });
+            res.status(200).json({ message: 'Login successful', userId: user._id, email: user.email });
         } else {
             console.log('Invalid credentials');
-            res.status(400).json({ success: false, message: 'Invalid credentials' });
+            res.status(400).json({ message: 'Invalid credentials' });
         }
     } catch (error) {
         console.error('Error logging in:', error);
-        res.status(500).json({ success: false, message: 'Error logging in' });
+        res.status(500).json({ message: 'Error logging in' });
     }
 });
 

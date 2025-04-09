@@ -1,6 +1,3 @@
-
-const BASE_URL = "https://pack-mytrip.vercel.app";
-
 document.addEventListener('DOMContentLoaded', () => {
     const isAdminLoggedIn = localStorage.getItem('isAdmin');
 
@@ -14,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch and display all bookings
     async function fetchBookings() {
         const bookingsContainer = document.getElementById('bookingsContainer');
-        const response = await fetch(`${BASE_URL}/admin/bookings`);
+        const response = await fetch('http://localhost:8000/admin/bookings');
         const bookings = await response.json();
 
         bookingsContainer.innerHTML = '';  // Clear container before adding bookings again
