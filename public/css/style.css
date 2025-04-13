@@ -89,6 +89,10 @@ section{
     text-transform: uppercase;
     color: var(--black);
 }
+
+/* base.css end*/
+
+/* header.css Start */
 .header{
     position: sticky;
     top: 0;left: 0;right: 0;
@@ -153,7 +157,9 @@ section{
     color: var(--black);
     display: none;
 }
+/* header.css end */
 
+/* home.css Start */
 .home{
     padding: 0;
 }
@@ -223,6 +229,9 @@ section{
 .home .swiper-button-prev{
     right: 7rem;
 } */
+ /* home.css end */
+
+ /* services.css start */
 
 .services .box-container{
     display: grid;
@@ -246,7 +255,8 @@ section{
     font-size: 1.7rem;
     padding-top: 1rem;
 }
-
+/* services end */
+/* about.css start */
 .home-about{
     display: flex;
     align-items: center;
@@ -545,7 +555,7 @@ section{
     text-align: center;
     margin-top: 2rem;
 }
-
+/* end package */
 .booking .book_form{
     padding: 2rem;
     background: var(--light-bg);
@@ -650,6 +660,7 @@ section{
     cursor: pointer;
     font-size: 20px;
 }
+/* booking end */
 
 /* Login */
 

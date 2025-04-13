@@ -1,0 +1,104 @@
+.booking .book_form{
+    padding: 2rem;
+    background: var(--light-bg);
+    border-radius: 10px;
+
+}
+.booking .book_form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.booking .book_form .inputBox{
+    flex: 1 1 41rem;
+    
+}
+
+.booking .book_form .inputBox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+    border-radius: 10px;
+
+}
+.booking .book_form .inputBox select{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+    border-radius: 10px;
+    background-color: var(--white);
+    background-repeat: no-repeat;
+    background-position: right 1rem top 50%;
+    background-size: 1rem;
+
+}
+
+
+.booking .book_form .inputBox input:focus{
+    background: var(--black);
+    color: var(--white);
+    
+}
+.booking .book_form .inputBox input:focus::placeholder{
+    color: var(--light-white);
+
+}
+
+.booking .book_form .inputBox span{
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.booking .book_form .btn{
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 10px 200px;
+    font-weight: bold;
+}
+.book-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Toast Notification Styles */
+.toast-container {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: rgba(144, 238, 144, 0.484);
+    font-size: 20px;
+    color: black;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.toast.show {
+    opacity: 1;
+}
+
+.toast .close-btn {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 20px;
+}

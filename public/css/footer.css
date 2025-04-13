@@ -1,0 +1,39 @@
+.footer{
+    background: linear-gradient(to right, #efc3ba, #ace3f8);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(22rem, 1fr));
+    gap: 3rem;
+
+}
+.footer .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+.footer .box-container .box a{
+    color: var(--black);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+.footer .box-container .box a i {
+    color: #ff5722 !important;
+    padding-right: .5rem !important;
+    transition: padding-right .2s linear !important;
+ }
+ .footer .box-container .box a:hover i {
+    padding-right: 2rem !important;
+ }
+.footer .copyright{
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--black);
+
+}

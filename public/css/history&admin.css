@@ -1,0 +1,66 @@
+/* Booking History Section */
+.booking-history {
+    padding: 10rem 10%;
+    background-color: #f9f9f9;
+}
+
+#historyContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.booking {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.booking h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 2rem;
+}
+
+.booking p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* admin */
+.admin-panel {
+    padding: 10rem 10%;
+    background-color: #f9f9f9;
+}
+
+#bookingsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.confirm-btn{
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 6px;
+    background: var(--black);
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.reject-btn{
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 6px;
+    background: var(--black);
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 12px;
+}

@@ -1,0 +1,25 @@
+/* Term & Condition */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 2.6;
+}
+
+.container h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ .container p {
+    font-size: 1.6rem;
+    color: var(--light-black);
+}
+
+.terms-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}

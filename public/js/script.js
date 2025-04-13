@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let loadMoreBtn = document.querySelector('.packages .load-more .btn');
-    let currentItem = 9; // Start with 9 items visible
+    let currentItem = 9; 
 
     loadMoreBtn.onclick = () => {
         for (let i = currentItem; i < Math.min(currentItem + 9, boxes.length); i++) {

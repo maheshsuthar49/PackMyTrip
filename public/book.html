@@ -7,8 +7,20 @@
     <title>Book Now - PackMyTrip</title>
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- custom css file -->
-    <link rel="stylesheet" href="css/style.css">
+     <!-- custom css file -->
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/header.css">
+     <link rel="stylesheet" href="css/home.css">
+     <link rel="stylesheet" href="css/services.css">
+     <link rel="stylesheet" href="css/about.css">
+     <link rel="stylesheet" href="css/packages.css">
+     <link rel="stylesheet" href="css/booking.css">
+     <link rel="stylesheet" href="css/login.css">
+     <link rel="stylesheet" href="css/history&admin.css">
+     <link rel="stylesheet" href="css/footer.css">
+     <link rel="stylesheet" href="css/chatbot.css">
+     <link rel="stylesheet" href="css/term.css">
+     <link rel="stylesheet" href="css/responsive.css">
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- boxicon -->
@@ -37,16 +49,12 @@
     </div>
 
     <section class="booking">
-        <!-- <h1 class="heading-title">Book your trip!</h1> -->
         <form id="bookingForm" class="book_form">
-            <!-- hidden package name -->
-            <input type="hidden" name="package_name" value="Forts and Palaces of Rajasthan">
-            <input type="hidden" name="price" value="25000">
 
             <div class="flex">
                 <div class="inputBox">
                     <span>Name:</span>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')">
                 </div>
                 <div class="inputBox">
                     <span>Email:</span>
@@ -54,7 +62,7 @@
                 </div>
                 <div class="inputBox">
                     <span>Phone:</span>
-                    <input type='text' id="phone" name="phone" placeholder="Enter your number" required maxlength="10">
+                    <input type='text' id="phone" name="phone" placeholder="Enter your number" required maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                 </div>
                 <div class="inputBox">
                     <span>Address:</span>
@@ -81,7 +89,7 @@
                 </div>
                 <div class="inputBox">
                     <span>Guests:</span>
-                    <input type="number" id="guests" placeholder="Number of guests" min="1" required>
+                    <input type="number" id="guests" placeholder="Number of guests" min="1" required oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                 </div>
                 <div class="inputBox">
                     <span>Arrival:</span>
@@ -129,7 +137,7 @@
             <a href=""><i class="fas fa-phone"></i> +91 9976543210</a>
             <a href=""><i class="fas fa-phone"></i> +91 9976543311</a>
             <a href=""><i class="fas fa-envelope"></i> packmytrip@gmail.com</a>
-            <a href=""><i class="fas fa-location"></i> Pali Rajasthan306401</a>
+            <a href=""><i class="fas fa-location"></i> Pali Rajasthan 306401</a>
         </div>
 
         <div class="box">

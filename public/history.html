@@ -6,8 +6,20 @@
     <title>History - PackMyTrip</title>
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- custom css file -->
-    <link rel="stylesheet" href="css/style.css">
+     <!-- custom css file -->
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/header.css">
+     <link rel="stylesheet" href="css/home.css">
+     <link rel="stylesheet" href="css/services.css">
+     <link rel="stylesheet" href="css/about.css">
+     <link rel="stylesheet" href="css/packages.css">
+     <link rel="stylesheet" href="css/booking.css">
+     <link rel="stylesheet" href="css/login.css">
+     <link rel="stylesheet" href="css/history&admin.css">
+     <link rel="stylesheet" href="css/footer.css">
+     <link rel="stylesheet" href="css/chatbot.css">
+     <link rel="stylesheet" href="css/term.css">
+     <link rel="stylesheet" href="css/responsive.css">
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- boxicon -->
@@ -56,17 +68,17 @@
         }
 
         const userId = localStorage.getItem('userId');
-        await fetchAndUpdateHistory(userId); // ✅ Function call to fetch history
+        await fetchAndUpdateHistory(userId); 
     });
 
-    // ✅ Function to fetch and update booking history
+    // Function to fetch and update booking history
     async function fetchAndUpdateHistory(userId) {
         try {
             const response = await fetch(`http://localhost:8000/bookings?userId=${userId}`);
             const bookings = await response.json();
             const historyContainer = document.getElementById('historyContainer');
 
-            historyContainer.innerHTML = '';  // ✅ Ensure old data is cleared before adding new
+            historyContainer.innerHTML = '';  
 
             bookings.forEach(booking => {
                 const bookingElement = document.createElement('div');
@@ -91,11 +103,11 @@
         }
     }
 
-    // ✅ Auto-refresh history every 5 seconds without duplication
+    //  Auto-refresh history every 5 seconds without duplication
     setInterval(async () => {
         const userId = localStorage.getItem('userId');
         await fetchAndUpdateHistory(userId);
-    }, 5000);  // ✅ Refresh every 5 seconds to reflect updates
+    }, 5000);  
 </script>
 </body>
 </html>

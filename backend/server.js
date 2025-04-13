@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(session({ secret: 'adminSecret', resave: false, saveUninitialized: true }));
 
 // Connect to Local MongoDB
-mongoose.connect('mongodb://localhost:27017/xyz', {})
+mongoose.connect('mongodb://localhost:27017/TourPackage', {})
     .then(() => {
         console.log('MongoDB connected successfully on localhost');
     })
@@ -35,16 +35,16 @@ const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemi
 // Function to format AI response (Convert Markdown to HTML)
 function formatResponse(text) {
     return text
-    .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>") // Convert **bold** to <b>
-    .replace(/\*(.*?)\*/g, "<i>$1</i>") // Convert *italic* to <i>
-    .replace(/\n\* (.*?)\n/g, "<ul><li>$1</li></ul>") // Convert * bullet points to <ul><li>
-    .replace(/(\n\s*){2,}/g, "<br><br>") // Ensures proper gaps between paragraphs & sections
-    .replace(/\nUser:/g, "<br><br><b>User:</b>") // Adds gap before "User:"
-    .replace(/\nBot:/g, "<br><br><b>Bot:</b>") // Adds gap before "Bot:"
-    .replace(/\n/g, "<br>") // Convert single new lines to <br> for HTML display
-    .replace(/<\/ul><br><ul>/g, "") // Fix multiple lists issue
-    .replace(/<ul><li>(.*?)<\/li><\/ul>/g, "<ul><li>$1</li></ul>") // Ensure proper list formatting
-    .replace(/<ul><li>(.*?)<\/li><\/ul><br>/g, "<ul><li>$1</li></ul>"); // Ensure proper list formatting with breaks
+    .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>") 
+    .replace(/\*(.*?)\*/g, "<i>$1</i>") 
+    .replace(/\n\* (.*?)\n/g, "<ul><li>$1</li></ul>") 
+    .replace(/(\n\s*){2,}/g, "<br><br>") 
+    .replace(/\nUser:/g, "<br><br><b>User:</b>")
+    .replace(/\nBot:/g, "<br><br><b>Bot:</b>") 
+    .replace(/\n/g, "<br>") 
+    .replace(/<\/ul><br><ul>/g, "") 
+    .replace(/<ul><li>(.*?)<\/li><\/ul>/g, "<ul><li>$1</li></ul>")
+    .replace(/<ul><li>(.*?)<\/li><\/ul><br>/g, "<ul><li>$1</li></ul>"); 
 }
 
 // Function to detect Hinglish (Basic Approach)
@@ -163,7 +163,7 @@ app.post('/admin/confirm/:id', async (req, res) => {
             return res.status(404).json({ success: false, message: 'Booking not found' });
         }
 
-        // ✅ BookingHistory collection me bhi update karo
+        //  BookingHistory collection me bhi update karo
         await BookingHistory.findOneAndUpdate({ email: booking.email, package_name: booking.package_name }, { status: 'Confirmed' });
 
         res.json({ success: true, message: 'Booking confirmed', booking });
@@ -183,7 +183,7 @@ app.post('/admin/reject/:id', async (req, res) => {
             return res.status(404).json({ success: false, message: 'Booking not found' });
         }
 
-        // ✅ BookingHistory collection me bhi update karo
+        //  BookingHistory collection me bhi update karo
         await BookingHistory.findOneAndUpdate({ email: booking.email, package_name: booking.package_name }, { status: 'Rejected' });
 
         res.json({ success: true, message: 'Booking rejected', booking });

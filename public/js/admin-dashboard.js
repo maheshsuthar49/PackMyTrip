@@ -104,10 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = '/admin.html';
     };
 
-    // Automatically log out admin when the window is closed
-    window.addEventListener('unload', () => {
-        localStorage.removeItem('isAdmin');
-    });
+   
 
     // Ensure `confirmBooking` and `rejectBooking` are globally accessible
     window.confirmBooking = confirmBooking;
