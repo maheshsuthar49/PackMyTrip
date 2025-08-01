@@ -4,7 +4,7 @@ document.getElementById('adminLoginForm').addEventListener('submit', async funct
     const email = document.getElementById('adminEmail').value;
     const password = document.getElementById('adminPassword').value;
 
-    const response = await fetch('http://localhost:8000/admin/login', {
+    const response = await fetch('packmytrip-1val.onrender.com/admin/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
