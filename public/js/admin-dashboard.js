@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to reject booking
     async function rejectBooking(id) {
         try {
-            const response = await fetch(`packmytrip-1val.onrender.com/admin/reject/${id}`, {
+            const response = await fetch(`https://packmytrip-1val.onrender.com/admin/reject/${id}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' }
             });
