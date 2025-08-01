@@ -19,14 +19,13 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.json());
 app.use(session({ secret: 'adminSecret', resave: false, saveUninitialized: true }));
 
-// Connect to Local MongoDB
-mongoose.connect('mongodb://localhost:27017/TourPackage', {})
-    .then(() => {
-        console.log('MongoDB connected successfully on localhost');
-    })
-    .catch((err) => {
-        console.error('Error connecting to MongoDB:', err);
-    });
+// Connect to  MongoDB atlas
+mongoose.connect('mongodb+srv://maheshsuthardm:G4gSsjwWnEoNyXTT@cluster0.jraxgkp.mongodb.net/packmytrip?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => console.log("MongoDB Atlas connected"))
+.catch((err) => console.error("MongoDB connection error:", err));
 
 // Gemini AI Configuration
 const GEMINI_API_KEY = "AIzaSyBcHsU0asH-v1fl56NntERBb9T-vO1voyw";
