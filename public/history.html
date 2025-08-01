@@ -74,7 +74,7 @@
     // Function to fetch and update booking history
     async function fetchAndUpdateHistory(userId) {
         try {
-            const response = await fetch(`http://localhost:8000/bookings?userId=${userId}`);
+            const response = await fetch(`https://packmytrip-1val.onrender.com/bookings?userId=${userId}`);
             const bookings = await response.json();
             const historyContainer = document.getElementById('historyContainer');
 
