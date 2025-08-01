@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch and display all bookings
     async function fetchBookings() {
         const bookingsContainer = document.getElementById('bookingsContainer');
-        const response = await fetch('http://localhost:8000/admin/bookings');
+        const response = await fetch('packmytrip-1val.onrender.com/admin/bookings');
         const bookings = await response.json();
 
         bookingsContainer.innerHTML = '';  // Clear container before adding bookings again
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to confirm booking
     async function confirmBooking(id) {
         try {
-            const response = await fetch(`http://localhost:8000/admin/confirm/${id}`, {
+            const response = await fetch(`packmytrip-1val.onrender.com/admin/confirm/${id}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' }
             });
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to reject booking
     async function rejectBooking(id) {
         try {
-            const response = await fetch(`http://localhost:8000/admin/reject/${id}`, {
+            const response = await fetch(`packmytrip-1val.onrender.com/admin/reject/${id}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' }
             });
