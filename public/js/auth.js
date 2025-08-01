@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             };
 
             try {
-                const response = await fetch('packmytrip-1val.onrender.com/register', {
+                const response = await fetch('https://packmytrip-1val.onrender.com/register', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
             };
 
             try {
-                const response = await fetch('packmytrip-1val.onrender.com/login', {
+                const response = await fetch('https://packmytrip-1val.onrender.com/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
