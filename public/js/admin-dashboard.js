@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch and display all bookings
     async function fetchBookings() {
         const bookingsContainer = document.getElementById('bookingsContainer');
-        const response = await fetch('packmytrip-1val.onrender.com/admin/bookings');
+        const response = await fetch('https://packmytrip-1val.onrender.com/admin/bookings');
         const bookings = await response.json();
 
         bookingsContainer.innerHTML = '';  // Clear container before adding bookings again
