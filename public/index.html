@@ -308,7 +308,7 @@
             chatMessages.appendChild(botTyping);
 
             try {
-                const response = await fetch("packmytrip-1val.onrender.com/chat", {
+                const response = await fetch("https://packmytrip-1val.onrender.com/chat", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ message: userMessage })
