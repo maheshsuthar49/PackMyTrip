@@ -88,7 +88,7 @@ document.getElementById('bookingForm').addEventListener('submit', async function
     };
 
     try {
-        const response = await fetch('/book', {
+        const response = await fetch('packmytrip-1val.onrender.com/book', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
